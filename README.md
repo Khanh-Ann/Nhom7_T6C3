@@ -1,9 +1,16 @@
-# Nhom7_T6C3
-"Công ty LANT là một công ty chuyên kinh doanh các mặt hàng về mỹ phẩm với quy mô tầm trung. Công ty đã xây dựng được uy tín trong lĩnh vực mỹ phẩm và đã có được số lượng khách hàng ổn định.
+# 💄 WEB BÁN MỸ PHẨM 💅
+Chào mừng bạn đến với trang web bán mỹ phẩm - nơi cung cấp các sản phẩm chăm sóc sắc đẹp chất lượng cao, giúp bạn tỏa sáng với vẻ đẹp tự nhiên và đầy cuốn hút!
+## 🌟 Giới thiệu
+Trang web bán mỹ phẩm là một nền tảng thương mại điện tử cao cấp, cung cấp các sản phẩm chăm sóc sắc đẹp như dưỡng da, trang điểm, nước hoa và nhiều hơn nữa! Chúng tôi cam kết mang đến cho bạn trải nghiệm mua sắm tiện lợi và an toàn với giao diện thân thiện và dễ sử dụng. 🌸
 
-Để mở rộng mô hình kinh doanh công ty mong muốn xây dựng được một hệ thống cửa hàng trực tuyến để tiếp cận được với nhiều nguồn khách hàng.
+## 🚀 Tính năng nổi bật
+- 🔍 **Tìm kiếm sản phẩm**: Lọc sản phẩm theo tên, danh mục, thương hiệu yêu thích.
+- 📝 **Xem chi tiết sản phẩm**: Mô tả, thành phần, giá và đánh giá từ khách hàng.
+- 🛒 **Quản lý giỏ hàng**: Thêm/xóa/sửa sản phẩm dễ dàng.
+- 💳 **Thanh toán nhanh chóng**: Tích hợp cổng thanh toán an toàn như **PayPal**
+- 📦 **Theo dõi đơn hàng**: Kiểm tra trạng thái đơn hàng nhanh chóng.
 
-Cửa hàng trực tuyến phải đảm bảo được sự trải nghiệm của khách hàng về các sản phẩm, các tiện ích thanh toán có thể được thực hiện trực tuyến thông qua các sàn giao dịch mà không cần phải đến cửa hàng. Khách hàng cũng có thể nhận sản phẩm tại nhà mà không cần phải đi đến các cửa hàng để mua.
-
-Ngoài ra, hệ thống cũng có thể giúp người dùng quản lý các sản phẩm trong kho, quản lý đơn đặt hàng,.."											
-
+## 🛠️ Công nghệ sử dụng
+- **Frontend**: [React](https://reactjs.org/), CSS, HTML
+- **Backend**: [Node.js](https://nodejs.org/) với Express
+- **Database**: [MySQL](https://www.mysql.com/) 
