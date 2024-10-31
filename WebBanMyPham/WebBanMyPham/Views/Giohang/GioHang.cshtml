@@ -1,0 +1,77 @@
+﻿@using WebBanMyPham.Models
+@model List<GioHang>
+<style>
+    tr, td {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+        text-align: center;
+        border: 1px solid rgba(0,0,0,0.5);
+        margin-left: 70px;
+        width: 90%;
+    }
+
+    #imggh {
+        width: 100px;
+        height: 150px;
+    }
+
+    a {
+        font-weight: bold;
+    }
+    .button:hover{
+        background-color: #f4c37d
+    }
+</style>
+<center>
+    <h2>@ViewBag.Title</h2>
+</center>
+<table>
+    <tr style="background-color: orange; height: 50px;">
+        <td>Tên Sản Phẩm</td>
+        <td>Ảnh Bìa</td>
+        <td>Số Lượng</td>
+        <td>Đơn Giá</td>
+        <td>Thành Tiền</td>
+        <td colspan="3">Thao Tác</td>
+    </tr>
+    @foreach (var SanPham in Model)
+    {
+        <tr>
+            <td>@SanPham.pTenSP</td>
+            <td>
+                <img style="width:200px; height: 200px" src="~/Upload/image_SP/@SanPham.pAnhbia" />
+            </td>
+            @using (Html.BeginForm("CapnhatGiohang", "Giohang", new { @iMaSp = SanPham.iMaSP }))
+            {
+                <td>
+                    <input class="text-center" type="number" min="1" name="txtSoluong" value="@SanPham.iSoluong" />
+                </td>
+                <td>@String.Format("{0:#,##0}", SanPham.pDonggia)</td>
+                <td>@String.Format("{0:#,##0}", SanPham.dThanhtien)</td>
+                @*<td class="text-info"><a href="@Url.Action("Details", "Home", new { id = SanPham.iMaSP })">Chi tiết</a></td>*@
+                <td class="text-danger">@Html.ActionLink("Xóa", "XoaGiohang", new { @iMaSp = SanPham.iMaSP })</td>
+                <td><input class="button" type="submit" value="Cập Nhật" style="border-radius: 5px;" /></td>
+            }   
+        </tr>
+    }
+    <tr class="text-primary">
+        <td colspan="4" style="text-align:left">Số lượng sản phẩm: @ViewBag.Tongsoluong</td>
+        <td colspan="4" style="text-align:left">Tổng tiền: @String.Format("{0:#,##0}", ViewBag.Tongtien) VNĐ</td>
+    </tr>
+    <tr class="text-danger">
+        <td colspan="8" style="text-align:center">
+            <a href="~/Views/Giohang/GioHang.cshtml">~/Views/Giohang/GioHang.cshtml</a>
+            @Html.ActionLink("Xóa Giỏ Hàng", "XoaTatcaGiohang")
+        </td>
+    </tr>
+    <tr>
+        <td colspan="8" class="text-white" style="height: 50px; width: 200px; border-radius: 10px; position: relative;">
+            @Html.ActionLink("Đặt Hàng", "DatHang", "Giohang")
+        </td>
+    </tr>
+</table>
+

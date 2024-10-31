@@ -1,0 +1,216 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|d:\\cntt\\athw\\mvc_webbanmypham\\mvc_webbanmypham\\webbanmypham\\webbanmypham\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\views\\nguoidung\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\views\\nguoidung\\dangnhap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\content\\css\\ui.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\content\\css\\ui.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\views\\nguoidung\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\views\\nguoidung\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\scripts\\js\\slider.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\scripts\\js\\slider.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\webbanmypham\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D294F220-547B-460B-85DC-AA6E8BC63CDD}|WebBanMyPham\\WebBanMyPham.csproj|solutionrelative:webbanmypham\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CNTT\\CNPMNC\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\_LayoutUser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model1.Context.cs",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Models\\Model1.Context.cs",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Models\\Model1.Context.cs",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Models\\Model1.Context.cs",
+              "RelativeToolTip": "WebBanMyPham\\Models\\Model1.Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T07:00:54.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Models\\Model1.edmx",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "WebBanMyPham\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-10-24T06:59:45.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutUser.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Views\\Shared\\_LayoutUser.cshtml",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeToolTip": "WebBanMyPham\\Views\\Shared\\_LayoutUser.cshtml",
+              "ViewState": "AgIAAOoCAAAAAAAAAAAAAPoCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T13:25:55.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebBanMyPham\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAuwLIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T09:12:09.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\SanPham\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Views\\SanPham\\Index.cshtml",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\SanPham\\Index.cshtml",
+              "RelativeToolTip": "WebBanMyPham\\Views\\SanPham\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T05:39:05.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ui.css",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Content\\css\\ui.css",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Content\\css\\ui.css",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Content\\css\\ui.css",
+              "RelativeToolTip": "WebBanMyPham\\Content\\css\\ui.css",
+              "ViewState": "AgIAAP0BAAAAAAAAAAAswP4BAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-29T10:24:18.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dangnhap.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\Dangnhap.cshtml",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Views\\NguoiDung\\Dangnhap.cshtml",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\Dangnhap.cshtml",
+              "RelativeToolTip": "WebBanMyPham\\Views\\NguoiDung\\Dangnhap.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwAgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T09:12:09.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DangKy.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\DangKy.cshtml",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Views\\NguoiDung\\DangKy.cshtml",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\DangKy.cshtml",
+              "RelativeToolTip": "WebBanMyPham\\Views\\NguoiDung\\DangKy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T09:12:09.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebBanMyPham\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIBAAAAAAAAAAAwwC8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T09:12:09.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "slider.js",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Scripts\\js\\slider.js",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Scripts\\js\\slider.js",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Scripts\\js\\slider.js",
+              "RelativeToolTip": "WebBanMyPham\\Scripts\\js\\slider.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-29T09:12:09.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Content\\Site.css",
+              "RelativeDocumentMoniker": "WebBanMyPham\\Content\\Site.css",
+              "ToolTip": "D:\\CNTT\\Athw\\MVC_WebBanMyPham\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Content\\Site.css",
+              "RelativeToolTip": "WebBanMyPham\\Content\\Site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-29T09:12:09.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_LayoutUser.cshtml",
+              "DocumentMoniker": "D:\\CNTT\\CNPMNC\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\_LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\CNPMNC\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\_LayoutUser.cshtml",
+              "ToolTip": "D:\\CNTT\\CNPMNC\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\_LayoutUser.cshtml",
+              "RelativeToolTip": "..\\..\\..\\..\\CNPMNC\\MVC_WebBanMyPham\\WebBanMyPham\\WebBanMyPham\\Views\\NguoiDung\\_LayoutUser.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T09:12:08.743Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Dangnhap";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    h4 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .login-container {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 400px;
+        margin-bottom: 120px;
+        border-collapse: separate;
+        border-spacing: 0 15px;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    p {
+        color: red;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+        a:hover {
+            text-decoration: underline;
+        }
+</style>
+
+<h4>ĐĂNG NHẬP</h4>
+<br />
+
+<div class="login-container">
+    <table>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+            <tr>
+                <td style="font-size:18px; font-weight:700; text-align:right;">Tên Đăng Nhập:</td>
+                <td>
+                    @Html.TextBox("TenDN", null, new { @class = "form-control" })
+                    <div class="error-message">@ViewData["Loi1"]</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size:18px; font-weight:700; text-align:right;">Mật Khẩu:</td>
+                <td>
+                    @Html.Password("Matkhau", null, new { @class = "form-control" })
+                    <div class="error-message">@ViewData["Loi2"]</div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng Nhập" class="submit-button" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: center;">
+                    <a href="#">Quên mật khẩu?</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

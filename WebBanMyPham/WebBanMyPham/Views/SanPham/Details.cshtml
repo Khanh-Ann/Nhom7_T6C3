@@ -1,0 +1,44 @@
+﻿<style>
+    img {
+        height: auto;
+        width: auto;
+    }
+</style>
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>@Model.TenSP</h5>
+<br />
+<div class="col-12">
+    <center>
+        <img style="width:200px; height: 200px" src="~/Upload/image_SP/@Model.Anhbia" />
+
+    </center>
+    <br />
+</div>
+<div class="col-12">
+    <h6>Loại sản phẩm: @Model.LoaiSP.TenLoai</h6>
+    <h6 class="danger">Giá bán: @String.Format("{0:#,##0}", @Model.Giaban) VNĐ</h6>
+    <h6>Số lượng tồn: @Model.Soluongton sản phẩm</h6>
+    <h6>Mô tả: @Model.Mota</h6>
+    <br />
+</div>
+@if (@Model.Soluongton != 0 && @Model.Soluongton != null)
+{
+    <div class="text-center">
+        <button type="button" class="btn bg-primary">
+            <a href="@Url.Action("ThemGiohang","GioHang", new {@iMaSP=@Model.MaSP,@strURL=Request.Url.ToString()})">Đặt Mua</a>
+        </button>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <button type="button" class="btn bg-danger">
+            Hết Hàng!
+        </button>
+    </div>
+}
+

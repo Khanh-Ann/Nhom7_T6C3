@@ -1,0 +1,260 @@
+﻿@using WebBanMyPham.Models;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<SanPham>
+
+<style>
+    .Trang li {
+        display: inline;
+        letter-spacing: 10px;
+    }
+    h3{
+        margin-right: 50px;
+    }
+</style>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<tbody>
+    <h3 class="section-title">SẢN PHẨM MỚI NHẤT</h3>
+    <div class="row">
+        @foreach (var SanPham in Model)
+        {
+            @*<tr>
+                    <td>@SanPham.MaSP</td>
+                    <td><img style="width:200px; height: 100px" src="~/Upload/image_SP/@SanPham.Anhbia"</td>
+                    <td>@SanPham.TenSP</td>
+                    <td>@SanPham.Giaban</td>
+                    <td>@SanPham.LoaiSP</td>
+                </tr>*@
+
+            <!--<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="@Url.Action("Details", "SanPham", new { id = SanPham.MaSP })">
+                                    <img style="width:200px; height: 200px" src="~/Upload/image_SP/@SanPham.Anhbia"/>-->
+            @*<img class="hover-img" src="@Url.Content(SanPham.Anhbia)" alt="@SanPham.TenSP" />*@
+            <!--</a>
+            <div class="button-head">
+                <div class="product-action">
+                    <a href="@Url.Action("Details", "SanPham", new { id = SanPham.MaSP })" title="Thông tin chi tiết">-->
+            @*<i class="ti-eye"></i><span>Xem nhanh</span>*@
+            <!--</a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Thêm vào yêu thích</span></a>
+                            </div>
+                            <div class="product-action-2">
+                                @if (SanPham.Soluongton != 0 && SanPham.Soluongton != null)
+                                {
+                                    <a href="@Url.Action("ThemGiohang", "GioHang", new { iMaSP = SanPham.MaSP, strURL = Request.Url.ToString() })">
+                                        Thêm vào giỏ
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content text-center">
+                        <h4><a href="@Url.Action("Details", "SanPham", new { id = SanPham.MaSP })">@SanPham.TenSP</a></h4>
+                        <div class="product-price">
+                            @if (SanPham.Soluongton != 0 && SanPham.Soluongton != null)
+                            {
+                                <span>@String.Format("{0:#,##0}", SanPham.Giaban)</span><span> VNĐ</span>
+                            }
+                            else
+                            {
+                                <span>Hết Hàng</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                <div class="single-product">
+                    <div class="product-img">
+                        <a href="@Url.Action("Details", "SanPham", new { id = SanPham.MaSP })">
+                            <img style="width:200px; height: 200px" src="~/Upload/image_SP/@SanPham.Anhbia" />
+                            @*<img class="hover-img" src="@Url.Content(SanPham.Anhbia)" alt="@SanPham.TenSP" />*@
+                        </a>
+                        <div class="button-head">
+                            <div class="product-action">
+                                <a href="@Url.Action("Details", "SanPham", new { id = SanPham.MaSP })" title="Thông tin chi tiết">
+                                    @*<i class="ti-eye"></i><span>Xem nhanh</span>*@
+                                </a>
+                                <a title="Wishlist" href="#"><i class=" ti-heart "></i><span>Thêm vào yêu thích</span></a>
+                            </div>
+                            <div class="product-action-2">
+                                @if (SanPham.Soluongton != 0 && SanPham.Soluongton != null)
+                                {
+                                    <a href="@Url.Action("ThemGiohang", "GioHang", new { iMaSP = SanPham.MaSP, strURL = Request.Url.ToString() })">
+                                        Thêm vào giỏ
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content text-center">
+                        <h4><a href="@Url.Action("Details", "SanPham", new { id = SanPham.MaSP })">@SanPham.TenSP</a></h4>
+                        <div class="product-price">
+                            @if (SanPham.Soluongton != 0 && SanPham.Soluongton != null)
+                            {
+                                <span>@String.Format("{0:#,##0}", SanPham.Giaban)</span><span> VNĐ</span>
+                            }
+                            else
+                            {
+                                <span>Hết Hàng</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+
+</tbody>
+
+<style>
+    .section-title {
+        margin-top:20px;
+        margin-bottom:20px;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: white;
+        padding: 0 10px;
+        position: relative;
+        color: #333; /* Màu chữ */
+    }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #d3d3d3; /* Màu gạch chân */
+            position: absolute;
+            left: 0;
+            bottom: -5px; /* Điều chỉnh khoảng cách giữa tiêu đề và gạch chân */
+            z-index: -1;
+        }
+
+    /* CSS cho sản phẩm */
+    .product-item {
+        padding: 15px;
+    }
+
+    .single-product {
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+        .single-product:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-img {
+        position: relative;
+        padding: 15px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .product-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .product-title a {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .product-title a:hover {
+            color: #007bff;
+        }
+
+    .product-price {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+        .product-price .price {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .product-price .currency {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .product-price .out-of-stock {
+            color: red;
+            font-size: 14px;
+        }
+
+    /* Style cho các nút hành động */
+    .button-head {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .single-product:hover .button-head {
+        opacity: 1;
+    }
+
+    .product-action {
+        margin-bottom: 10px;
+    }
+
+        .product-action a {
+            display: inline-block;
+            background: #f4c37d;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+            .product-action a:hover {
+                background: #f37a11;
+            }
+
+    .product-action-2 a {
+        background: #f4c37d;
+        color: #fff;
+        padding: 5px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+        .product-action-2 a:hover {
+            background: #f37a11;
+        }
+
+</style>
+@* Tạo liên kết giữa các trang *@
+<!--<div class="Trang">
+    Trang @(Model.PageNumber) / @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+</div>-->

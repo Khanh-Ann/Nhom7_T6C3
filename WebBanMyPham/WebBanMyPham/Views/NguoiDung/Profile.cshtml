@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+
+}
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+    <div class="container">
+
+        <div class="row">
+            <aside class="col-md-3">
+                <nav class="list-group">
+                    <a class="list-group-item active" href="page-profile-main.html">Tổng quan về tài khoản</a>
+                    <a class="list-group-item" href="page-profile-address.html"> Địa chỉ của tôi </a>
+                    <a class="list-group-item" href="page-profile-orders.html"> Đơn hàng của tôi </a>
+                    <a class="list-group-item" href="page-profile-setting.html"> Cài đặt </a>
+                    <a class="list-group-item" href="page-index-1.html"> Đăng xuất </a>
+                </nav>
+            </aside> <!-- col.// -->
+            <main class="col-md-9">
+
+                <div class="card">
+                    <div class="card-body">
+                        <form class="row">
+                            <div class="col-md-9">
+                                <div class="form-row">
+                                    <div class="col form-group">
+                                        <label>Họ tên</label>
+                                        <input type="text" class="form-control" value="">
+                                    </div> <!-- form-group end.// -->
+                                    <div class="col form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" value="">
+                                    </div> <!-- form-group end.// -->
+
+                                </div> <!-- form-row.// -->
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Địa chỉ</label>
+                                        <input type="text" class="form-control">
+                                    </div> <!-- form-group end.// -->
+
+                                    <div class="form-group col-md-6">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" class="form-control">
+                                    </div> <!-- form-group end.// -->
+                                </div> <!-- form-row.// -->
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Ngày sinh</label>
+                                        <input type="date" class="form-control">
+                                    </div> <!-- form-group end.// -->
+
+                                </div> <!-- form-row.// -->
+
+                                <button class="btn btn-primary">Lưu</button>
+                                <button class="btn btn-light">Thay đổi mật khẩu</button>
+
+                                <br><br><br><br><br><br>
+
+                            </div> <!-- col.// -->
+                            <div class="col-md">
+                                <img src="~/Content/images/icon/ic_user.png" class="img-md rounded-circle border">
+                            </div>  <!-- col.// -->
+                        </form>
+                    </div> <!-- card-body.// -->
+                </div> <!-- card .// -->
+
+
+
+            </main> <!-- col.// -->
+        </div>
+
+    </div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->

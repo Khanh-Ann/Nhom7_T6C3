@@ -1,0 +1,446 @@
+﻿@using WebBanMyPham.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SanPham>
+@{
+    ViewBag.Title = "DanhSachTD";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+
+
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+    <div class="container">
+
+        <header class="mb-3">
+            <div class="form-inline">
+                <strong class="mr-md-auto">TRANG ĐIỂM </strong>
+                <select class="mr-2 form-control">
+                    <option>Mới nhất</option>
+                    <option>Phổ biến nhất</option>
+                    <option>Rẻ nhất</option>
+                </select>
+            </div>
+        </header><!-- sect-heading -->
+
+        <div class="row">
+            <div class="col-md-3">
+                @foreach (var sp in Model)
+                {
+                    <figure class="card card-product-grid">
+                        <div class="img-wrap">
+                            <span class="badge badge-danger"> MỚI NHẤT </span>
+                            <img src="~/images/anhsp/@sp.pAnhbia" />
+                        </div> <!-- img-wrap.// -->
+                        <figcaption class="info-wrap">
+                            <a href="@Url.Action("ChiTietTD", "SanPham")" class="title mb-2">Kem Che Khuyết Điểm TIRTIR</a>
+                            <div class="price-wrap">
+                                <span class="price">
+                                    @String.Format("{0:#,##0}", sp.pDonggia)
+                                </span>
+                                <small class="text-muted">/ sản phẩm</small>
+                            </div> <!-- price-wrap.// -->
+
+                            <hr>
+
+                            <p class="mb-3">
+                                <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                                <span class="tag"> 2 năm </span>
+                                <span class="tag"> 1000 bình luận </span>
+                                <span class="tag"> Việt Nam </span>
+                            </p>
+
+                            <label class="custom-control mb-3 custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <div class="custom-control-label">
+                                    Thêm vào yêu thích
+                                </div>
+                            </label>
+
+                            <a href="@Url.Action("DatHang", "Giohang")" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                        </figcaption>
+                    </figure>
+                }
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/5.png" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Kem Che Khuyết Điểm NARS</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                600.000 VND – 610.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        >
+                        <img src="~/Content/images/trang điểm/4.jfif">
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Phấn Phủ FOCALLURE</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                100.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/6.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Kem Che Khuyết Điểm FIX IT</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                150.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/7.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Kem Nền Maybelline Fit Me Fresh Tint</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                180.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/8.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Kem Nền Maybelline</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                200.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/9.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Phấn Phủ Dạng Nén Maybelline Fit Me</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                250.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/10.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Kem Che Khuyết Điểm STAGENIUS</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                100.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/11.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Phấn Phủ Bột CARSLAN</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                120.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/12.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Phấn phủ trang điểm CARSLAN</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                300.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+
+            <div class="col-md-3">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap">
+                        <img src="~/Content/images/trang điểm/13.jpg" />
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <a href="#" class="title mb-2">Che Khuyết Điểm Dạng Kem NYX</a>
+                        <div class="price-wrap">
+                            <span class="price">
+                                160.000 VND
+                            </span>
+                            <small class="text-muted">/ sản phẩm</small>
+                        </div> <!-- price-wrap.// -->
+
+                        <hr>
+
+                        <p class="mb-3">
+                            <span class="tag"> <i class="fa fa-check"></i> Đã xác minh</span>
+                            <span class="tag"> 2 năm </span>
+                            <span class="tag"> 1000 bình luận </span>
+                            <span class="tag"> Việt Nam </span>
+                        </p>
+
+                        <label class="custom-control mb-3 custom-checkbox">
+                            <input type="checkbox" class="custom-control-input">
+                            <div class="custom-control-label">
+                                Thêm vào yêu thích
+                            </div>
+                        </label>
+
+                        <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Thêm vào giỏ hàng </a>
+
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        </div> <!-- row end.// -->
+
+
+        <nav class="mb-4" aria-label="Page navigation sample">
+            <ul class="pagination">
+                <li class="page-item disabled"><a class="page-link" href="#">Trước</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+            </ul>
+        </nav>
+
+
+    </div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->

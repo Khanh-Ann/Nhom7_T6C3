@@ -1,0 +1,158 @@
+﻿
+@{
+    ViewBag.Title = "ChiTietTD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="py-3 bg-light">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+            <li class="breadcrumb-item"><a href="#">DANH MỤC SẢN PHẨM</a></li>
+            <li class="breadcrumb-item"><a href="#">TRANG ĐIỂM</a></li>
+            <li class="breadcrumb-item"><a href="#">Kem Che Khuyết Điểm TIRTIR</a></li>
+        </ol>
+    </div>
+</section>
+
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content bg-white padding-y">
+    <div class="container">
+
+        <!-- ============================ ITEM DETAIL ======================== -->
+        <div class="row">
+            <aside class="col-md-6">
+                <div class="card">
+                    <article class="gallery-wrap">
+                        <div class="img-big-wrap">
+                            <div> <a href="#"><img src="~/Content/images/trang điểm/14.jpg"></a></div>
+                        </div> <!-- slider-product.// -->
+                        <div class="thumbs-wrap">
+                            <a href="#" class="item-thumb"> <img src="~/Content/images/trang điểm/14.jpg"></a>
+                            <a href="#" class="item-thumb">
+                                <img src="~/Content/images/trang điểm/Chi Tiết/1.png" />
+                            </a>
+                            <a href="#" class="item-thumb">
+                                <img src="~/Content/images/trang điểm/Chi Tiết/2.png" />
+                            </a>
+                            <a href="#" class="item-thumb">
+                                <img src="~/Content/images/trang điểm/Chi Tiết/3.png" />
+                            </a>
+                        </div> <!-- slider-nav.// -->
+                    </article> <!-- gallery-wrap .end// -->
+                </div> <!-- card.// -->
+            </aside>
+            <main class="col-md-6">
+                <article class="product-info-aside">
+
+                    <h2 class="title mt-3">Kem Che Khuyết Điểm TIRTIR</h2>
+
+                    <div class="rating-wrap my-3">
+                        <ul class="rating-stars">
+                            <li style="width:80%" class="stars-active">
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </li>
+                        </ul>
+                        <small class="label-rating text-muted">500 nhận xét</small>
+                        <small class="label-rating text-success"> <i class="fa fa-clipboard-check"></i> 1000 lượt mua</small>
+                    </div> <!-- rating-wrap.// -->
+
+                    <div class="mb-3">
+                        <var class="price h4">369.000 VND – 380.000 VND</var>
+                    </div> <!-- price-detail-wrap .// -->
+
+                    <p>
+                        Giúp loại bỏ các khuyết điểm trên gương mặt (quần thâm, mụn, nám, tàn nhan) để lớp trang điểm được đồng đều.
+                        Kết cấu 2 trong 1 dạng đầu thỏi, dạng lỏng giúp bạn dễ dàng che khuyết điểm cho từng vùng khác nhau.
+                        Sử dụng dạng thỏi cho những vùng có khuyết điểm rộng và dạng lỏng cho những vùng da hẹp.
+                    </p>
+
+
+                    <dl class="row">
+                        <dt class="col-sm-3">Xuất Xứ</dt>
+                        <dd class="col-sm-9"><a href="#">Hàn Quốc</a></dd>
+
+                        <dt class="col-sm-3">Số Bài Viết</dt>
+                        <dd class="col-sm-9">596 065</dd>
+
+                        <dt class="col-sm-3">Hạn Sử Dụng</dt>
+                        <dd class="col-sm-9">36 tháng kể từ ngày sản xuất/12 tháng kể từ ngày mở nắp</dd>
+
+                        <dt class="col-sm-3">Thời Gian Giao Hàng</dt>
+                        <dd class="col-sm-9">3-4 ngày</dd>
+
+                        <dt class="col-sm-3">Khả Năng Sẵn Có</dt>
+                        <dd class="col-sm-9">Còn hàng</dd>
+                    </dl>
+
+                    <div class="form-row  mt-4">
+                        <div class="form-group col-md flex-grow-0">
+                            <div class="input-group mb-3 input-spinner">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                                </div>
+                                <input type="text" class="form-control" value="1">
+                                <div class="input-group-append">
+                                    <button class="btn btn-light" type="button" id="button-minus"> &minus; </button>
+                                </div>
+                            </div>
+                        </div> <!-- col.// -->
+                        <div class="form-group col-md">
+                            <a href="#" class="btn  btn-primary">
+                                <i class="fas fa-shopping-cart"></i> <span class="text">MUA NGAY </span>
+                            </a>
+                            <a href="@Url.Action("DatHang", "Giohang")" class="btn btn-light">
+                                <i class="fas fa-envelope"></i> <span class="text">THÊM VÀO GIỎ HÀNG</span>
+                            </a>
+                        </div> <!-- col.// -->
+                    </div> <!-- row.// -->
+
+                </article> <!-- product-info-aside .// -->
+            </main> <!-- col.// -->
+        </div> <!-- row.// -->
+        <!-- ================ ITEM DETAIL END .// ================= -->
+
+
+    </div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+<!-- ========================= SECTION  ========================= -->
+<section class="section-name padding-y bg">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="title-description">1. GIỚI THIỆU THƯƠNG HIỆU</h5>
+                <p>
+                    TIRTIR là một thương hiệu làm đẹp hướng tới Healthy-Life nhằm phục hồi làn da khô và da nhạy cảm, mang lại làn da khỏe mạnh, căng bóng vốn có.
+                    TIRTIR phát huy vẻ đẹp tự nhiên và rạng rỡ mà mọi loại da đều xứng đáng có được bằng cách kết hợp với thành phần tự nhiên, thử nghiệm an toàn, và theo đuổi lối sống lành mạnh.
+                </p>
+
+                <h5 class="title-description">2. THÔNG TIN SẢN PHẨM</h5>
+                <p>
+                    Kem che khuyết điểm 2 trong 1 dạng lỏng và dạng thỏi giúp dễ dàng kết hợp che phủ các khuyết điểm (nám, tàn nhan, nốt ruồi, làm mờ thâm, trang điểm nền, tạo khối, chỉnh sửa môi, lông mày).
+                </p>
+
+                <h5 class="title-description">3. HDSD</h5>
+                <p>
+                    <a href="~/Content/bootstrap-grid.css.map">~/Content/bootstrap-grid.css.map</a>
+                    Dùng 1 lượng vừa đủ chấm lên khuyết điểm cần che. Nếu ở vùng khuyết điểm rộng sử dụng dạng thỏi, ở vùng khuyết điểm nhỏ thì dụng dạng kem.
+                </p>
+
+                <h5 class="title-description">4. BẢO QUẢN</h5>
+                <p>
+                    Nơi khô ráo, thoáng mát. Tránh ánh nắng trực tiếp, nơi có nhiệt độ cao hoặc ẩm ướt. Đậy nắp kín sau khi sử dụng.
+                </p>
+            </div> <!-- col.// -->
+        </div> <!-- row.// -->
+    </div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->

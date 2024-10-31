@@ -1,0 +1,105 @@
+﻿@using WebBanMyPham.Models
+@model List<GioHang>
+
+
+<style>
+    h2 {
+        margin-top:50px;
+        text-align: center;
+    }
+
+    tr, td {
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid black
+    }
+
+    table {
+        margin-top:50px;
+        margin-left: 350px;
+        text-align: center;
+        border: 1px solid black;
+        width: 800px;
+    }
+
+    #imggh {
+        width: 100px;
+        height: 150px;
+    }
+
+
+    }
+    .button:hover {
+        background-color: #f4c37d;
+    }
+</style>
+<h2>Thông Tin Sản Phẩm</h2>
+<table>
+    <tr style="height: 40px; background-color: orange;">
+        <td>Tên Sách</td>
+        <td>Ảnh Bìa</td>
+        <td>Số Lượng</td>
+        <td>Đơn Giá</td>
+        <td>Thành Tiền</td>
+    </tr>
+    @foreach (var SanPham in Model)
+    {
+        <tr style="height: 40px;">
+            <td>@SanPham.pTenSP</td>
+            <td><img style="width:200px; height: 200px" src="~/Upload/image_SP/@SanPham.pAnhbia"/></td>
+            @using (Html.BeginForm("CapnhatGiohang", "Giohang", new { @iMaSp = SanPham.iMaSP }))
+            {
+                <td>
+                    @SanPham.iSoluong
+                </td>
+                <td>@String.Format("{0:#,##0}", SanPham.pDonggia)</td>
+                <td>@String.Format("{0:#,##0}", SanPham.dThanhtien)</td>
+            }
+        </tr>
+    }
+    <tr style="height: 40px; text-align: center;">
+        <td colspan="5" class="text-primary">
+            @Html.ActionLink("Trở về Giỏ Hàng", "GioHang", "Giohang")
+        </td>
+    </tr>
+</table>
+<h2>Thông Tin Đặt Hàng</h2>
+@{
+    KHACHHANG kh = (KHACHHANG)Session["Taikhoan"];
+}
+<table>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <tr style="height: 40px; padding-left: 10px;">
+            <td style="text-align: left">Họ tên khách hàng:</td>
+            <td style="text-align: left">@kh.HoTen</td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="text-align: left">Địa chỉ:</td>
+            <td style="text-align: left">@kh.DiachiKH</td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="text-align: left">Điện thoại:</td>
+            <td style="text-align: left">@kh.DienthoaiKH</td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="text-align: left">Ngày đặt:</td>
+            <td style="text-align: left">@DateTime.Now.ToShortDateString()</td>
+        </tr>
+        <tr style="height: 40px;">
+            <td style="text-align: left">Ngày giao hàng:</td>
+            <td style="text-align: left">
+                <input type="date" name="Ngaygiao" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="/Giohang/PaymentWithPayPal" class="button" style="border-radius: 5px; padding: 10px 20px; text-decoration: none; background-color: #4CAF50; color: white;">
+                    THANH TOÁN
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
